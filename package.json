@@ -1,0 +1,22 @@
+{
+  "name": "vocabulary_book",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p src/ -w",
+    "server": "lite-server -c=bs-config.json",
+    "start": "concurrently \"npm run build\" \"npm run server\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.0.2",
+    "lite-server": "^2.5.4",
+    "typescript": "^3.7.4"
+  },
+  "dependencies": {
+    "@types/node": "^13.1.4"
+  }
+}
